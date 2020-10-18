@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+/*Javascript*/
+header.sticky {
+    background: rgb(255, 255, 255);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.185);
+}
+
+
+header .logo {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/*Javascript*/
+header.sticky .logo {
+    color: rgb(12, 12, 12);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li:hover{
+    background-color: rgba(20, 20, 20, 0.425);
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: rgb(17, 17, 17);
+}
+
+header.sticky ul li:hover{
+    background-color: rgba(219, 219, 219, 0.384);
+}
+
+.boveda {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(17, 17, 17);
+}
+
+.boveda h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenidoBx {
+    padding-right: 30px;
+}
+
+.contenidoBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(../img/images/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: rgb(33, 150, 243);
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.btn:hover{
+    background: rgb(63, 169, 255);
+}
+
+.services {
+    background-color: rgb(17, 17, 17);
+}
+
+.boveda.blanco {
+    color: rgb(255, 255, 255);
+}
+
+.services .contenido {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .contenido .servicesBx {
+    padding: 40px 20px;
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    max-width: 320px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.services .contenido .servicesBx:hover {
+    background: rgb(31, 139, 228);
+}
+
+.services .contenido .servicesBx img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.services .contenido .servicesBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work .contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .contenido .workBx {
+    width: 50%;
+    padding: 20px;
+}
+
+.work .contenido .workBx img {
+    max-width: 100%;
+}
+
+.testimonial {
+    background: rgb(247, 247, 247);
+}
+
+.testimonial .contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial .contenido .testimonialBx {
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: rgb(65, 209, 29);
+}
+
+.testimonial .contenido .testimonialBx p {
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonial .contenido .testimonialBx h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonial .contenido .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact {
+    background-color: rgb(17, 17, 17);
+}
+
+.contactInfo {
+    min-width: 40%;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icono {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .texto {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .texto h3 {
+    font-weight: 500;
+    color: rgb(33, 150, 243);
+    margin-bottom: 0;
+
+}
+
+.formBx {
+    min-width: 60%;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input,
+.formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    resize: none;
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+    color: rgb(179, 179, 179);
+}
+
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: rgb(33, 150, 243);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.formBx form input[type="submit"]:hover{
+    background: rgb(63, 169, 255);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+}
+
+.copyright {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 13px;
+}
+
+.copyright p {
+    color: rgb(255, 255, 255);
+}
+
+/*Responsive*/
+@media (max-width: 991px){
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgb(0, 0, 0, 0.2);
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/icon/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background-image: url(../img/icon/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .boveda h2{
+        font-size: 24px;
+    }
+    .contenidoBx h3{
+        font-size: 20px;
+    }
+    .contenido{
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom: 20px;
+    }
+    .services .contenido .servicesBx{
+        margin: 10px;
+    }
+    .work .contenido .workBx{
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonial .contenido .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+    }
+    .testimonial .contenido .testimonialBx h3{
+        margin-top: 20px;
+    }
+    .contactInfo {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 600px){
+    header,
+    header.sticky {
+        padding: 20px 20px;
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+}
