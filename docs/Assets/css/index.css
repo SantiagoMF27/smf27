@@ -23,6 +23,8 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.89);
+
 }
 
 /*Javascript*/
@@ -30,6 +32,7 @@ header.sticky {
     background: rgb(255, 255, 255);
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.185);
+    text-shadow: none;
 }
 
 
@@ -57,7 +60,7 @@ header ul li {
     list-style: none;
 }
 header ul li:hover{
-    background-color: rgba(20, 20, 20, 0.425);
+    background-color: rgba(20, 20, 20, 0.171);
 }
 
 header ul li a {
@@ -120,6 +123,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .banner h2 {
@@ -127,17 +131,20 @@ img {
     color: rgb(255, 255, 255);
     font-weight: 500;
     line-height: 1.5em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
 }
 
 .banner h2 span {
     font-size: 1.3em;
     font-weight: 700;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
 }
 
 .banner h3 {
     font-size: 1.5em;
     color: rgb(255, 255, 255);
     font-weight: 500;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.555);
 }
 
 .btn {
@@ -359,11 +366,16 @@ footer {
 
 /*Responsive*/
 @media (max-width: 991px){
+    header .logo {
+        color: rgb(0, 0, 0);
+    }
     header,
     header.sticky {
         padding: 20px 50px;
         z-index: 1000;
+        text-shadow: none;
     }
+
     .menu{
         position: fixed;
         top: 75px;
@@ -395,6 +407,7 @@ footer {
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
+        filter: invert(1);
     }
     .toggle.active{
         background-image: url(../img/icon/close.png);
